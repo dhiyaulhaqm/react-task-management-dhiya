@@ -1,0 +1,72 @@
+.task {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.task::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 180deg at 50% 50%, #ff7e5f, #feb47b, #ff7e5f);
+  animation: rotate 5s linear infinite;
+  z-index: 0;
+  opacity: 0.2;
+  pointer-events: none;  /* Pastikan pseudo-elemen tidak menghalangi interaksi */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.task h3, .task p {
+  position: relative;
+  z-index: 1;
+}
+
+.task:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.task button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  box-shadow: 3px 3px 6px rgba(0, 91, 187, 0.2), -3px -3px 6px rgba(0, 123, 255, 0.2);
+  color: #fff;
+  transition: background 0.3s, transform 0.3s;
+  position: relative;  /* Pastikan tombol berada di lapisan atas */
+  z-index: 1;  /* Tingkatkan z-index tombol */
+}
+
+.task button:hover {
+  background: linear-gradient(145deg, #0056b3, #003d80);
+  transform: translateY(-3px);
+}
+
+.task button:last-child {
+  background: linear-gradient(145deg, #dc3545, #a71d2a);
+  box-shadow: 3px 3px 6px rgba(167, 29, 42, 0.2), -3px -3px 6px rgba(220, 53, 69, 0.2);
+}
+
+.task button:last-child:hover {
+  background: linear-gradient(145deg, #a71d2a, #80111b);
+}
