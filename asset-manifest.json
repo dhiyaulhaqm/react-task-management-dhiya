@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-task-management-dhiya/static/css/main.cf6a1b9d.css",
+    "main.js": "/react-task-management-dhiya/static/js/main.c2821e50.js",
+    "static/js/453.26e9e032.chunk.js": "/react-task-management-dhiya/static/js/453.26e9e032.chunk.js",
+    "index.html": "/react-task-management-dhiya/index.html",
+    "main.cf6a1b9d.css.map": "/react-task-management-dhiya/static/css/main.cf6a1b9d.css.map",
+    "main.c2821e50.js.map": "/react-task-management-dhiya/static/js/main.c2821e50.js.map",
+    "453.26e9e032.chunk.js.map": "/react-task-management-dhiya/static/js/453.26e9e032.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf6a1b9d.css",
+    "static/js/main.c2821e50.js"
+  ]
+}
